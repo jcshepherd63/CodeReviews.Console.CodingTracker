@@ -16,7 +16,7 @@ public class CodeSessionController
     }
 
 
-    private static Table CodingTimeTableOutput()
+    private static Table CodeSessionTableOutput()
     {
         var table = new Table()
             .RoundedBorder()
@@ -35,7 +35,7 @@ public class CodeSessionController
     public static void OutputSessionListToTable()
     {
         List<CodingTime> codingSessions = CodeSessionService.GetAllCodeSessions();
-        var table = CodingTimeTableOutput();
+        var table = CodeSessionTableOutput();
 
         foreach (CodingTime session in codingSessions)
         {
