@@ -23,7 +23,7 @@ public class _DatabaseCreation
             connection.Open();
             var tableCmd = @"CREATE TABLE IF NOT EXISTS CodingSessions
                             (Id INTEGER PRIMARY KEY AUTOINCREMENT, 
-                            Date TEXT, StartTime TEXT, EndTime TEXT, ProjectId INTEGER);
+                            Date TEXT, StartTime TEXT, EndTime TEXT, Duration TEXT, ProjectId INTEGER);
 
                             CREATE TABLE IF NOT EXISTS Projects(
                             Id INTEGER PRIMARY KEY AUTOINCREMENT,

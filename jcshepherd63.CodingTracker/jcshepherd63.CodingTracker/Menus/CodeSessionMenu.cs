@@ -138,6 +138,7 @@ public class CodeSessionMenu
         var date = CodeSessionMenu.CodeDateSelectionMenu();
         var startTime = CodeSessionMenu.SessionStartTimeSelectionMenu();
         var endTime = CodeSessionMenu.SessionEndTimeSelectionMenu();
+        var duration = endTime - startTime;
         var projectId = ProjectService.GetProjectId();
 
         CodingTime codeTime = new()

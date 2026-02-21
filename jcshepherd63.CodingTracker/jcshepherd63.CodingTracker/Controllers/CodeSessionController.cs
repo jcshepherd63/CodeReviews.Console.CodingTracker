@@ -14,7 +14,6 @@ public class CodeSessionController
         return calendar;
     }
 
-
     private static Table CodeSessionTableOutput()
     {
         var table = new Table()
@@ -26,6 +25,7 @@ public class CodeSessionController
         table.AddColumn("[italic]Session Date[/]");
         table.AddColumn("[italic]Session Start Time[/]");
         table.AddColumn("[italic]Session End Time[/]");
+        table.AddColumn("[italic]Session Duration[/]");
         table.AddColumn("[italic]Project Worked On[/]");
 
         return table;
@@ -43,6 +43,7 @@ public class CodeSessionController
                 session.Date.ToString("MM-dd-yyyy"),
                 session.StartTime.ToString(),
                 session.EndTime.ToString(),
+                session.Duration.ToString(),
                 ProjectService.GetProjectNameFromId(session));
         }
         AnsiConsole.Write(table);
