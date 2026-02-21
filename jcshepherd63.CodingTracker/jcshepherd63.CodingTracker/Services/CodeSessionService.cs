@@ -10,8 +10,8 @@ public class CodeSessionService
         using (var connection = new SqliteConnection(_DatabaseCreation.GetConnection()))
         {
             connection.Open();
-            var addCmd = @"INSERT INTO CodingSessions (Date, StartTime, EndTime, ProjectId)
-                       VALUES (@Date, @StartTime, @EndTime, @ProjectId)";
+            var addCmd = @"INSERT INTO CodingSessions (Date, StartTime, EndTime, Duration, ProjectId)
+                       VALUES (@Date, @StartTime, @EndTime, @Duration, @ProjectId)";
             connection.Execute(addCmd, codeTime);
             connection.Close();
         }
@@ -28,7 +28,7 @@ public class CodeSessionService
         using (var connection = new SqliteConnection(_DatabaseCreation.GetConnection()))
         {
             connection.Open();
-            var updateCmd = @"UPDATE CodingSessions SET Date = @Date, StartTime = @StartTime, EndTime = @EndTime, ProjectId = @ProjectId WHERE Id = @Id";
+            var updateCmd = @"UPDATE CodingSessions SET Date = @Date, StartTime = @StartTime, EndTime = @EndTime, Duration = @Duration ,ProjectId = @ProjectId WHERE Id = @Id";
             connection.Execute(updateCmd, codeTime);
             connection.Close();
         }

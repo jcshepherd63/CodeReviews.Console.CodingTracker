@@ -146,6 +146,7 @@ public class CodeSessionMenu
             Date = date,
             StartTime = startTime,
             EndTime = endTime,
+            Duration = duration.ToString(@"hh\:mm\:ss"),
             ProjectId = Convert.ToInt32(projectId)
         };
 
