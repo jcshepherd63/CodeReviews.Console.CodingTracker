@@ -45,8 +45,8 @@ public class CodeSessionController
             table.AddRow(
                 session.Id.ToString(),
                 session.Date.ToString("MM-dd-yyyy"),
-                session.StartTime.ToString(),
-                session.EndTime.ToString(),
+                session.StartTime.ToShortTimeString(),
+                session.EndTime.ToShortTimeString(),
                 session.Duration.ToString(),
                 ProjectService.GetProjectNameFromId(session));
         }
