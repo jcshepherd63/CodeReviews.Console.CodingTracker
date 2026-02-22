@@ -1,6 +1,9 @@
 using Spectre.Console;
-using jcshepherd63.CodingTracker.Models;
-namespace App;
+using CodingTrackerEnums;
+using CodeSessionMethods;
+using ProjectMethods; 
+
+namespace Menus;
 
 public class MainMenu
 {

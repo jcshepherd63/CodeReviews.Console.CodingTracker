@@ -1,4 +1,9 @@
 ﻿using Spectre.Console;
+using ProjectModel;
+using CodingTimeModel;
+using ProjectMethods;
+
+namespace Menus;
 
 public class CodeSessionMenu
 {

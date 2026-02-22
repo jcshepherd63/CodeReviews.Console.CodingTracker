@@ -1,6 +1,12 @@
-﻿
+﻿using ProjectModel;
+using CodingTimeModel;
+using CodeSessionMethods;
+using Menus;
+using DatabaseMethods;
 using Microsoft.Data.Sqlite;
 using Dapper;
+
+namespace ProjectMethods;
 
 public class ProjectService
 {

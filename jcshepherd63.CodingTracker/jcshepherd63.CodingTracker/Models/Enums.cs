@@ -1,4 +1,4 @@
-namespace jcshepherd63.CodingTracker.Models;
+namespace CodingTrackerEnums;
 
 public class Enums
 {

@@ -1,6 +1,11 @@
 ﻿using Dapper;
 using Microsoft.Data.Sqlite;
 using Spectre.Console;
+using CodingTimeModel;
+using DatabaseMethods;
+using Menus;
+
+namespace CodeSessionMethods;
 
 public class CodeSessionService
 {

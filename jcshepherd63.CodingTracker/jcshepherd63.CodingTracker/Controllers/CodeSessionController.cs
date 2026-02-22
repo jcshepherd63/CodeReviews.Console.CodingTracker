@@ -1,6 +1,10 @@
 ﻿using Spectre.Console;
 using System;
 using System.Collections.Generic;
+using ProjectMethods;
+using CodingTimeModel;
+
+namespace CodeSessionMethods;
 
 public class CodeSessionController
 {

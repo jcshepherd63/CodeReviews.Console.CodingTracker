@@ -1,5 +1,9 @@
-﻿using jcshepherd63.CodingTracker.Models;
+﻿using CodingTrackerEnums;
+using ProjectModel;
+using ProjectMethods;
 using Spectre.Console;
+
+namespace Menus;
 
 public class ProjectMenu
 {

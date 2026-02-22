@@ -1,3 +1,5 @@
+namespace CodingTimeModel;
+
 public class CodingTime
 {
     public int Id { get; set; }

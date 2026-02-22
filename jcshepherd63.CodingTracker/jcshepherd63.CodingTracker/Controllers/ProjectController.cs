@@ -1,6 +1,10 @@
-﻿using jcshepherd63.CodingTracker.Models;
+﻿using CodingTrackerEnums;
 using Spectre.Console;
 using System.Collections.Generic;
+using Menus;
+using ProjectModel;
+
+namespace ProjectMethods;
 
 public class ProjectController
 {
