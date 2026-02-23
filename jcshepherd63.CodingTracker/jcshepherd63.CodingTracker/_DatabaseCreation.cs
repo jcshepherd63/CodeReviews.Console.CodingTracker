@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace DatabaseMethods;
 
-public class _DatabaseCreation
+public class DatabaseCreation
 {
     public static string GetConnection()
     {
@@ -17,7 +17,7 @@ public class _DatabaseCreation
         return connectionString;
     }
 
-    public static void dbTableCreate()
+    public static void DbTableCreate()
     {
         var connectionString = GetConnection();
         using (var connection = new SqliteConnection(connectionString))
