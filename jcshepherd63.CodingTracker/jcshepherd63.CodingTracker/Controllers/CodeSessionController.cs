@@ -44,7 +44,7 @@ public class CodeSessionController
         {
             table.AddRow(
                 session.Id.ToString(),
-                session.Date.ToString("MM-dd-yyyy"),
+                session.Date.ToString("yyyy-MM-dd"),
                 session.StartTime.ToShortTimeString(),
                 session.EndTime.ToShortTimeString(),
                 session.Duration.ToString(),

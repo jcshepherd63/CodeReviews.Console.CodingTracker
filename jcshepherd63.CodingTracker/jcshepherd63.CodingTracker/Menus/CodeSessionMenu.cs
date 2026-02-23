@@ -23,7 +23,7 @@ public class CodeSessionMenu
         }
         else
         {
-            today = AnsiConsole.Ask<DateTime>("[yellow]What day did you work on coding? (Required Format MM-dd-yyyy)[/]");
+            today = AnsiConsole.Ask<DateTime>("[yellow]What day did you work on coding? (Required Format yyyy-MM-dd)[/]");
             Console.WriteLine($"{today:d}");
         }
 
